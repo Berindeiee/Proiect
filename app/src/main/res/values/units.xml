@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="distance_units">
+        <item>Milimetru (mm)</item>
+        <item>Centimetru (cm)</item>
+        <item>Decimetru (dm)</item>
+        <item>Metru (m)</item>
+        <item>Decametru (dam)</item>
+        <item>Hectometru (hm)</item>
+        <item>Kilometru (km)</item>
+        <item>Inch (in)</item>
+        <item>Picior (ft)</item>
+        <item>Yard (yd)</item>
+        <item>Milă (mi)</item>
+        <item>Milă marină (nmi)</item>
+        <item>Unitate astronomică (AU)</item>
+        <item>An-lumină (ly)</item>
+        <item>Parsec (pc)</item>
+    </string-array>
+</resources>

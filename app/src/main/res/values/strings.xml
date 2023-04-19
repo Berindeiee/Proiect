@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Proiect</string>
+    <string name="search_hint">Căutare</string>
+    <string name="search_image_hint">Pictogramă de căutare</string>
+
+    <string name="categorie1">Convertor</string>
+    <string name="categorie2">Financiar</string>
+    <string name="hint_auto_complete">Alege unitatea</string>
+    <string name="title_activity_ecran_lungime">ecran_lungime</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
