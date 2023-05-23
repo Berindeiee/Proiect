@@ -17,4 +17,38 @@
         <item>An-lumină (ly)</item>
         <item>Parsec (pc)</item>
     </string-array>
+
+    <string-array name="mass_units">
+        <item>Miligram (mg)</item>
+        <item>Gram (g)</item>
+        <item>Kilogram (kg)</item>
+        <item>Tona (t)</item>
+        <item>Uncie (oz)</item>
+        <item>Lira (lb)</item>
+        <item>Piatra (st)</item>
+        <item>Tona scurta (us t)</item>
+        <item>Tona lunga (uk t)</item>
+    </string-array>
+
+    <string-array name="data_units">
+        <item>Bit (b)</item>
+        <item>Byte (B)</item>
+        <item>Kilobit (Kb)</item>
+        <item>Kilobyte (KB)</item>
+        <item>Megabit (Mb)</item>
+        <item>Megabyte (MB)</item>
+        <item>Gigabit (Gb)</item>
+        <item>Gigabyte (GB)</item>
+        <item>Terabit (Tb)</item>
+        <item>Terabyte (TB)</item>
+        <item>Petabit (Pb)</item>
+        <item>Petabyte (PB)</item>
+        <item>Exabit (Eb)</item>
+        <item>Exabyte (EB)</item>
+        <item>Zettabit (Zb)</item>
+        <item>Zettabyte (ZB)</item>
+        <item>Yottabit (Yb)</item>
+        <item>Yottabyte (YB)</item>
+    </string-array>
+
 </resources>

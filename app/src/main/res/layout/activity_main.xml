@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:id="@+id/layout_principal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:orientation="vertical"
@@ -20,7 +19,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <SearchView
+
+    <SearchView
             android:id="@+id/casetaSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,54 +91,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_hover_effect"
-                    android:text="Buton 1" />
-
-                <Button
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_hover_effect"
-                    android:text="Buton 2" />
-
-                <Button
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_hover_effect"
-                    android:text="Buton 3" />
-
-                <Button
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_hover_effect"
-                    android:text="Buton 4" />
-
-                <Button
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_hover_effect"
-                    android:text="Buton 5" />
-
-                <Button
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_hover_effect"
-                    android:text="Buton 6" />
-
-                <Button
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/button_hover_effect"
-                    android:text="Buton 7" />
+                <!-- Butonul hardcodat a fost eliminat de aici -->
 
             </LinearLayout>
 
@@ -161,18 +114,18 @@
                     android:id="@+id/distanta_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
                     android:background="@drawable/menu_item_background"
                     android:clickable="true"
-                    android:focusable="true">
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/menuItemImage1"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/liniar"
-                        android:contentDescription="linear" />
+                        android:contentDescription="linear"
+                        android:src="@drawable/liniar" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -200,19 +153,20 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/masa_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
                     android:background="@drawable/menu_item_background"
                     android:clickable="true"
-                    android:focusable="true">
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
 
                     <ImageView
                         android:id="@+id/menuItemImage2"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/lupa" />
+                        android:src="@drawable/masa" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -226,7 +180,7 @@
                             android:id="@+id/menuItemName2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Item Name"
+                            android:text="Masă"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -238,46 +192,10 @@
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
+                <include android:id="@+id/date_item" layout="@layout/menu_item" />
+                <include android:id="@+id/second_menu_item" layout="@layout/menu_item" />
+                <include android:id="@+id/third_menu_item" layout="@layout/menu_item" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    android:background="@drawable/menu_item_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <ImageView
-                        android:id="@+id/menuItemImage3"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/lupa" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp">
-
-                        <TextView
-                            android:id="@+id/menuItemName3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Item Name"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/menuItemCategory3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/categorie1"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-                </LinearLayout>
 
                 <!-- Adăugați aici alte elemente de meniu -->
 
